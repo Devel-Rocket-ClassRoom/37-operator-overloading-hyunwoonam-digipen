@@ -70,11 +70,6 @@ struct GameCurrency
         return false;
     }
 
-    public  bool Equals(GameCurrency other)
-    {
-        return this == other; ;
-    }
-
     public override int GetHashCode()
     {
         return HashCode.Combine(Gold, Silver);
